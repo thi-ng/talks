@@ -28,7 +28,7 @@
 
   Viewable presentation hosted at:
 
-  [[http://media.thi.ng/talks/we-are-the-incanters/index.html][media.thi.ng]]
+  [[http://media.thi.ng/2014/talks/we-are-the-incanters/index.html][media.thi.ng]]
 
 * Prologue (II)
 
