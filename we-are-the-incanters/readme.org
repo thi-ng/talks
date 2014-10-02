@@ -32,6 +32,8 @@
 
 * Prologue (II)
 
+  /(Ignore the following if you're viewing this file on GitHub)/
+
   Cursor keys to navigate forward/backward, up/down
 
   Press 'Esc' to show overview map
