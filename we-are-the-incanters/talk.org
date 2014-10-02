@@ -28,9 +28,11 @@
 
   Viewable presentation hosted at:
 
-  [[http://media.thi.ng/talks/we-are-the-incanters/index.html][media.thi.ng]]
+  [[http://media.thi.ng/2014/talks/we-are-the-incanters/index.html][media.thi.ng]]
 
 * Prologue (II)
+
+  /(Ignore the following if you're viewing this file on GitHub)/
 
   Cursor keys to navigate forward/backward, up/down
 
@@ -314,7 +316,7 @@
 #+BEGIN_NOTES
   The invention of the binary number system was driven by the desire of creating an
   universal language, able to unambiguously describe all human thoughts.
-  John Wilkins (a cardinal) and one of the co-founders of the Royal Society in London,
+  John Wilkins (a bishop) and one of the co-founders of the Royal Society in London,
   also spent over a decade working on such an endevour, but most of this work is lost. 
 #+END_NOTES
 
@@ -560,10 +562,10 @@
 
 #+BEGIN_NOTES
   Just like with the short period (in the bigger picture) of the Cambrian,
-  which gave rise to the majority of species which have survived until our age,
-  especially recently we have seen an emergence of new languages addressing
-  the shortcomings of the ones we used to take for granted, but have
-  increasingly been hitting their limits.
+  which gave rise to the majority of animal species, especially recently
+  we have seen an emergence of new languages addressing the shortcomings
+  of the ones we used to take for granted, but have increasingly been
+  hitting their limits.
 
   This of course is yet another sign of the Tower of Babel effect, but IMHO
   a very good one. Apart from increased fragmentation, more languages mean 
@@ -600,7 +602,7 @@
 * Language as/is layer cake
 * Language as/is technology
 * New metaphors
-* DSL example: Sonic-PI
+* DSL example: Sonic-Pi
 
   [[http://sonic-pi.net][sonic-pi.net]]
 
@@ -627,15 +629,11 @@
   Let's jam...
 #+END_NOTES
 
-* Sonic-PI livecoding
+* Sonic-Pi livecoding
 
 #+REVEAL_HTML: <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/169948688&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
 
   [[https://gist.github.com/postspectacular/d9c951efb166a2e82f53][Source code]]
-
-#+BEGIN_NOTES
-  The linked source code 
-#+END_NOTES
 
 * Confirmation bias
 
@@ -756,11 +754,6 @@
 
 * Client vs. Server
 * APIs vs. dataflow
-
-#+BEGIN_NOTES
-
-#+END_NOTES
-
 * Network topologies
 
   :PROPERTIES:
@@ -769,20 +762,12 @@
 
   [[./assets/network-topologies.svg]]
 
-#+BEGIN_NOTES
-  
-#+END_NOTES
-
 * Exponential behavior
   :PROPERTIES:
   :reveal_extra_attr: class="full-size"
   :END:
 
   [[./assets/exponential.png]]
-
-#+BEGIN_NOTES
-
-#+END_NOTES
 
 * Moore's law vs Big-O
 
@@ -791,10 +776,6 @@
   :END:
 
   [[./assets/moores-law.jpg]]
-
-#+BEGIN_NOTES
-
-#+END_NOTES
 
 * 
 
@@ -1399,7 +1380,7 @@ Big-O notation
 
   vs.
 
-  JSON-LD / CSV-LD / RDF / Transit [...]
+  [[http://json-ld.org/][JSON-LD]] / [[https://www.w3.org/2013/csvw/wiki/CSV-LD][CSV-LD]] / [[https://en.wikipedia.org/wiki/Resource_Description_Framework][RDF]] / [ [[https://github.com/cognitect/transit-format][Transit]] ...]
 
 #+BEGIN_NOTES
   Data not always tabular or hierarchical (trees).
@@ -1798,10 +1779,6 @@ Big-O notation
  
   Written in a literate programming style
 
-#+BEGIN_NOTES
-
-#+END_NOTES
-
 * Literate programming
 
   Donald Knuth
@@ -1815,10 +1792,6 @@ Big-O notation
   https://github.com/thi-ng/trio/blob/master/src/query.org
 
   [[http://emacs.org][Emacs]] & [[http://orgmode.org][Org-mode]]
-
-#+BEGIN_NOTES
-
-#+END_NOTES
 
 * Graph _all_ the things
 
@@ -1919,12 +1892,11 @@ Big-O notation
   :reveal_extra_attr: class="white-text"
   :END:
 
-  postspectacular.com
+  [[http://postspectacular.com][postspectacular.com]]
 
-  thi.ng
+  [[http://thi.ng][thi.ng]]
 
   k@thi.ng
 
-  @toxi
-
+  [[https://twitter.com/toxi][@toxi]]
 
