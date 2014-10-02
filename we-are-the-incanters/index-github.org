@@ -1,0 +1,1901 @@
+#+EXPORT_EXCLUDE_TAGS:  noexport
+#+AUTHOR:               Karsten Schmidt
+#+EMAIL:                k@thi.ng
+#+LANGUAGE:             en
+#+OPTIONS:              toc:nil
+#+OPTIONS:              reveal_center:t reveal_progress:t reveal_history:t reveal_control:t
+#+OPTIONS:              reveal_mathjax:nil reveal_rolling_links:nil reveal_keyboard:t reveal_overview:t num:nil
+#+OPTIONS:              width:1680 height:1050
+#+REVEAL_HEAD_PREAMBLE: <meta name="description" content="Talk given @ Retune conference 2014 by Karsten Schmidt">
+#+REVEAL_HLEVEL:        1
+#+REVEAL_MARGIN:        0.0
+#+REVEAL_MIN_SCALE:     1.0
+#+REVEAL_MAX_SCALE:     1.75
+#+REVEAL_THEME:         toxi
+#+REVEAL_TRANS:         fade
+#+REVEAL_SPEED:         fast
+#+REVEAL_ROOT:          .
+#+TITLE:                We are the incanters
+* Prologue (I)
+
+  This talk was given at [[http://retune.de][Retune 2014]]
+
+  An earlier, less complete version at [[http://reasons.to][Reasons to be Creative]]
+
+  Source code (incl. all notes & assets) on [[https://github.com/thi-ng/talks/][GitHub]]
+
+  Created with [[http://emacs.org][Emacs]], [[http://orgmode.org][Org-mode]], [[https://github.com/yjwen/org-reveal][org-reveal]] & [[https://github.com/hakimel/reveal.js/][reveal.js]]
+
+  Viewable presentation hosted at:
+
+  [[http://media.thi.ng/talks/we-are-the-incanters/index.html][media.thi.ng]]
+
+* Prologue (II)
+
+  Cursor keys to navigate forward/backward, up/down
+
+  Press 'Esc' to show overview map
+
+  Press 'S' to show presenter display w/ notes
+
+* incant
+
+  . | ɪnˈkant | .
+
+  /verb [ with obj. ]/
+
+  *ORIGIN* mid 16th cent. (in the sense 'use enchantment on'):
+
+  from Latin incantare 'to chant, charm',
+
+  from in- (expressing intensive force) + cantare 'sing'.
+
+  The current sense dates from the mid 20th century
+
+#+BEGIN_EXAMPLE
+  I'm incredibly grateful every time I'm invited to give a talk like this,
+  since it allows me to step back a little bit from my day to day work and
+  think about how the things I and others around me are doing, and how they
+  might fit into the bigger scheme of things and by exposing them, maybe
+  help us to better frame our future activities.
+
+  I also think, we're generally at a point in time where it might be
+  genuinely helpful to zoom out a little bit and not just talk about our recent
+  creative endeavors, but take into account history, psychology and philosophy,
+  for some of you maybe seemingly irrelevant, but which I nonetheless found
+  incredibly important in my own work and approach.
+
+  These topics *are* important, because if one *does* look back in time just a
+  few decades, you realise many of the early pioneers of computing were not
+  just driven by deeply philosophical beliefs and the idea that their work might
+  contribute to positive social change, but also that the the field of
+  computing was far less fractured and more holistic regarding the inclusion of
+  other fields of study as core components for this work.
+
+  This distinction is an important one since it makes us view our discipline
+  in a very different light than one which is purely focused on technology
+  for technology's and gadget's sake and makes us question the current meaning
+  of words like innovation, change, speed, creativity and shifts our focus...
+
+  So picking an ancient word as title for this talk was a good driver for me to
+  frame the topics I want to talk about in a larger context & time span.
+#+END_EXAMPLE
+
+* Language(s)
+
+#+BEGIN_EXAMPLE
+  Language is the medium all human activities are based on upon, so this is not about
+  language as text, but the language of all expression:
+  from cooking, arts, cultural sampling, technology, even that of violence and war...
+  For each form of expression is based upon a symbolism we sometimes can, but often
+  cannot decipher (anymore)...
+
+  Like many others of my generation, I started programming in my formative years
+  as an early teenager and very quickly realised that what I love most about it
+  is that it would provide me with an endless rabbit hole of self-discovery and
+  learning, unlike anything else I've ever worked with. Code (in it's most general sense)
+  has become my medium to understand the world and also has made me aware of the 
+  inherent dangers and limitations of it and languages at large.
+
+  Personally, I've been spending the past 3 years exploring new (and old) languages
+  and processes, tried (even sometimes succeeded) to find forward-looking clients and
+  convince them of the benefits of funding such work, and as a result ending up going
+  down a rabbit hole which caused me to learn more about different perspectives and
+  the nature of computer science and systems built upon them than in the other 24 years
+  of my career combined.
+
+  As a coder I (have to) think about language on a daily basis and for the past
+  few years I've increasingly realized that the Tower of Babel is in full effect.
+#+END_EXAMPLE
+
+* Luke 23:24
+
+  :PROPERTIES:
+  :reveal_background: #ffff00
+  :reveal_extra_attr: class="quote"
+  :END:
+
+  "Father, forgive them, for they don't know what they're doing."
+
+#+BEGIN_EXAMPLE
+  Even to a non-religious person, The Book is a great source of gems of wisdom,
+  especially when cross-referenced with...
+#+END_EXAMPLE
+
+* Bruce Lee
+  :PROPERTIES:
+  :reveal_background: #ffff00
+  :reveal_extra_attr: class="quote"
+  :END:
+
+  "I do not know the answers,
+
+  but I seek to understand the questions."
+
+#+BEGIN_EXAMPLE
+  The challenge to surround oneself with people more clever and inspiring than
+  ourselves was one of the best advices I got early on in life and I've tried
+  to live up to it ever since.
+
+  But the need for doing so has also turned me into a seeker, one who questions
+  things and the status quo of the communities I've been part of and eventually
+  left again, from the early demoscene, to Director, Flash, Processing...
+
+  Over time many of communities turn into a self-serving purpose and become more
+  interested in self-preservation than continuing their journey into unknown lands
+  filled with the magic of discovery and avoid major changes to their established
+  and self-produced status-quo.
+
+  As creators (not *creatives*, which we all are) it's our responsibility to
+  move our disciplines forward in order to (in the words of Saul Williams):
+
+  "Lift up the consciousness of the entire fucking world!"
+#+END_EXAMPLE
+
+* Tower of Babel
+  :PROPERTIES:
+  :reveal_background: ./assets/tower-of-babel.jpg
+  :reveal_extra_attr: class="white-text"
+  :END:
+
+#+BEGIN_EXAMPLE
+  Last year I gave a talk with that title and spoke about how this effect is
+  also present in our little community of "creative computing", how many of us
+  actively pursue a monoculture, which manifest themselves as insular cultures based
+  on chosen technologies, how this results in only incremental changes and how we could
+  access more forms of expression and completely change our way of working simply
+  by learning and adopting more languages (and means of working) and so start learning
+  to see the world (and our work) through these different lenses provided by the languages.
+
+  But because learning new languages requires years of dedication and effort,
+  which itself carries a high risk, they also constitute natural borders of
+  understanding. Even in such small communities as ours we often don't understand
+  each other, not only because we don't speak the same languages, but even more so
+  because we don't even understand the individual symbols, idioms or ideas some of those
+  languages are formed upon.
+
+  This not only leads to the insular nature of many small communities centered around
+  languages of creative expression (especially in programming) and which IMHO results
+  in the current general state of perpetual "worse is better" or worse, the outright
+  rejection of new ideas. It also means we are largely unable to tell sense from non-sense
+  if it has not already been translated in a language we understand.
+
+  It's all just an awful lot of noise...
+#+END_EXAMPLE
+
+* Signal/Noise
+
+  :PROPERTIES:
+  :reveal_background: ./assets/noise.jpg
+  :reveal_extra_attr: class="white-text"
+  :END:
+
+#+BEGIN_EXAMPLE
+  Semantic noise is probably a more modern interpretation of "The Tower of Babel"...
+  Retune's subtitle "Inside the mirror" is also a good one: Unless we step out from that
+  mirror box, we will only ever see communal selfies and end up refracting existing
+  ideas spawned within the mirror...
+
+  In Neal Stephenson's Anathem (from which I also took the cue for Incanters), there's
+  a passage about the last original idea was the idea that everything has been done or
+  thought of before. I partially agree with that and much mileage is to be had even if
+  this true, but it should not stop us from trying to break our own mirrors.
+#+END_EXAMPLE
+
+* Friedrich Kittler
+  :PROPERTIES:
+  :reveal_background: #ffff00
+  :reveal_extra_attr: class="quote"
+  :END:
+
+  [[./assets/people/friedrich-kittler.jpg]]
+
+  "The first derivative of noise is non-sense.
+
+  The second derivative is meaning."
+
+#+BEGIN_EXAMPLE
+  Kittler was a media theorist. For me this quote implies, it is not
+  enough for us to just look at how media and technology has changed
+  over time, but actually step back even further to analyze how and
+  why these changes occurred...
+#+END_EXAMPLE
+
+* McLuhan vs. Kittler
+
+  :PROPERTIES:
+  :reveal_background: #ffff00
+  :reveal_extra_attr: class="quote"
+  :END:
+
+  "The development of the internet has more to do with
+
+  human beings becoming a reflection of their technologies.
+
+  *After all, it is we who adopt the machine.*
+
+  *The machine does not adopt us.*"
+
+#+BEGIN_EXAMPLE
+  This is a very contrarian view to McLuhan's positive attitude of
+  seeing technology as controllable tool and utilitarian extension
+  of human activity.
+
+  Kittler argues we're deluding ourselves to consider us masters of
+  our technological domain. It might hold true in detail, but not
+  if seen as a whole.
+#+END_EXAMPLE
+
+* Kittler
+
+  :PROPERTIES:
+  :reveal_background: #ffff00
+  :reveal_extra_attr: class="quote"
+  :END:
+
+  "Media determine our situation.
+
+  What remains of people is what media can store and communicate."
+
+#+BEGIN_EXAMPLE
+  It's quite hard to argue with this statement and I believe it is
+  paramount that all of us help to start exploring more ways how this
+  scope can be increased. Because all media are based on language, it
+  is therefore natural to take an interest and understand how the
+  languages (and their symbolisms) we use directly determine our
+  possibilities in terms of (self)expression and how these creative
+  processes percolate and are absorbed by our (media) culture.
+#+END_EXAMPLE
+
+* Recursion
+
+  The content of a medium is always another medium
+
+  [[./assets/infinity.png]]
+
+#+BEGIN_EXAMPLE
+  This basically defines media in a recursive manner and this concept is
+  not just deeply related to programming, but also language in general.
+  No other medium has this power. A fitting Alan Perlis quote:
+
+  "A picture is worth 10K words - but only those that describe the picture. Hardly
+  any sets of 10K words can be adequately described with pictures."
+#+END_EXAMPLE
+
+* Language as medium
+* Writing
+
+  Script divides history from pre-history
+
+  ↓
+
+*** script=storage+transmission
+
+#+BEGIN_EXAMPLE
+  Script was the first medium to couple storage and transmission of information.
+#+END_EXAMPLE
+
+*** code=storage+transmission+execution
+
+#+BEGIN_EXAMPLE
+  Code also couples automatic execution and hence is outside
+  our direct control. Halting theorem, interconnected systems,
+  digital fabrication, agents
+#+END_EXAMPLE
+
+* Universal language
+
+  ↓
+
+** Bacon, Leibniz, [Wilkins ...]
+
+   [[./assets/people/francis-bacon.jpg]] [[./assets/people/leibniz.jpg]]
+
+#+BEGIN_EXAMPLE
+  The invention of the binary number system was driven by the desire of creating an
+  universal language, able to unambiguously describe all human thoughts.
+  John Wilkins (a cardinal) and one of the co-founders of the Royal Society in London,
+  also spent over a decade working on such an endevour, but most of this work is lost. 
+#+END_EXAMPLE
+
+** The duality of the I Ching
+
+   [[./assets/trigrams.png]]
+
+#+BEGIN_EXAMPLE
+  The trigrams and opposing duals of the I Ching (and Ying-Yang) were a direct
+  influence on Leibnitz' binary number system.
+#+END_EXAMPLE
+
+** Universal code(?)
+
+#+BEGIN_EXAMPLE
+  Even though I believe code as medium and coding as creation
+  has a much larger scope and expressive potential, I wouldn't
+  argue either to satisfy the concept of universal expression.
+#+END_EXAMPLE
+
+* Codes & Ciphers
+
+  [[./assets/friedman-cipher.jpg]]
+
+#+BEGIN_EXAMPLE
+  Computing history and the development of media itself has been
+  shown to be related to military applications and road building,
+  as early communications technology. The concept of an universal
+  language is an important one, since it enabled certain cryptographic/
+  steganographic applications and hence allowed the hiding of
+  messages in plain sight. The creation of new infrastructure was
+  required to carry these messages faster. Cryptography itself not
+  just related to secure comms, but also to invention of new languages
+  and symbolisms: The expression/encoding of knowledge in hithero
+  unthought ways.
+#+END_EXAMPLE
+
+* Knowledge = Power
+
+  :PROPERTIES:
+  :reveal_extra_attr: class="full-size"
+  :END:
+
+  [[./assets/people/friedman-knowledge2.jpg]]
+
+  Source: [[http://www.cabinetmagazine.org/issues/40/sherman.php][Cabinet Magazine]]
+
+#+BEGIN_EXAMPLE
+  One of my favourite examples of a cryptographic masterpiece.
+  This group shot of William Friedman's team of cryptographers itself
+  encodes this message...
+#+END_EXAMPLE
+
+* Knowledge = Powe(r)
+
+  :PROPERTIES:
+  :reveal_extra_attr: class="full-size"
+  :END:
+
+  [[./assets/people/friedman-decoded.jpg]]
+
+  Source: [[http://www.cabinetmagazine.org/issues/40/sherman.php][Cabinet Magazine]]
+
+#+BEGIN_EXAMPLE
+  People as bits, 5 per character... 32 possible symbols, enough to encode
+  full English alphabet. The last "R" is incomplete...
+#+END_EXAMPLE
+
+* Hierarchy of needs
+
+  Hardware
+
+  Software
+
+  UI
+
+  Courseware
+
+  Mentoring
+
+#+BEGIN_EXAMPLE
+  Alan Kay's hierarchy of needs and complexity in terms of developing new technologies.
+#+END_EXAMPLE
+
+* Hierarchy of complexity
+
+  Hardware
+
+  Software
+
+  UI
+
+  Courseware
+
+  Mentoring
+
+#+BEGIN_EXAMPLE
+  Hardware easiest, mentoring hardest...
+#+END_EXAMPLE
+
+* Ivan Illich
+
+  :PROPERTIES:
+  :reveal_background: #ffff00
+  :reveal_extra_attr: class="quote"
+  :END:
+
+  [[./assets/people/ivan-illich.jpg]]
+
+  "[...] to transform each moment of one's living into one of
+
+  *learning, sharing, and caring*."
+
+#+BEGIN_EXAMPLE
+  Kay and many others of this generation of computing pioneers were
+  deeply influenced by ideas for social change and a grand vision
+  for better education and means of self-expression
+
+  Illich too spent the majority of his life arguing against the extreme
+  institutionalization of many pillars of western societies and his ideas
+  were highly influential on the grassroots community of technology makers
+  in the 70s/80s. Alas Ayn Rand's ideas of objectivism completely
+  bulldozed much of this thinking in meantime and is now prevalent in
+  much of Silicon Valley.
+#+END_EXAMPLE
+
+* Lee Felsenstein
+
+  [[./assets/people/lee-felsenstein.jpg]]
+
+  ↓
+
+#+BEGIN_EXAMPLE
+  From Wikipedia:
+
+  "Many of his designs were leaders in reducing costs of computer technologies
+  for the purpose of making them available to large markets.
+
+  His work featured a concern for the social impact of technology and was
+  influenced by the philosophy of Ivan Illich.
+
+  Felsenstein was the engineer for the Community Memory project, one of the
+  earliest attempts to place networked computer terminals in public places
+  to facilitate social interactions among individuals,
+  in the era before the commercial Internet."
+#+END_EXAMPLE
+
+** SOL-20
+
+  [[./assets/sol-20.jpg]]
+
+  1976
+
+  Intel 8080, 2Mhz, 1KB RAM, sold as kit ($995)
+
+** Apple I
+
+   [[./assets/apple-i.jpg]]
+
+   1976
+
+   MOS 6502, 1MHz, 4KB RAM, semi-kit (no casing)
+
+#+BEGIN_EXAMPLE
+  An actual product vs. a bread box (don't mean C64 which had same nickname)
+  Both machines from the same year.
+  Marketing is obviously stronger than engineering (no offense to Wozniak!).
+#+END_EXAMPLE
+
+** Osborne-1
+
+   [[./assets/osborne-1.jpg]]
+
+   1981
+
+   weight: 10.7kg
+
+   first consumer portable computer
+
+* Whorf & Sapir
+
+  [[./assets/people/benjamin-lee-whorf.jpg]] [[./assets/people/edward-sapir.jpg]]
+
+  Linguistic Relativity
+
+  [[https://en.wikipedia.org/wiki/Linguistic_relativity][Wikipedia]]
+
+#+BEGIN_EXAMPLE
+  First learned of this idea about a decade ago and it kept popping into my head
+  everytime I got frustrated with being unable to express certain ideas in code.
+  Theory arguable in terms of natural languages, but I think very much applies to
+  the formal and often highly constrained world of programming langs...
+#+END_EXAMPLE
+
+* Mind vs machine
+
+  [[./assets/people/alan-perlis.jpg]]
+
+  "To understand a program you must become
+
+  *both the machine and the program.*"
+
+  Alan Perlis
+
+#+BEGIN_EXAMPLE
+  Empathy: being able to transpose oneself into the position of the other,
+  in order to understand its view of the world.
+  You cannot talk to a machine without mentally taking its position,
+  a position which is based on nothing else but logic.
+  Programming encourages/forces us to mentally role play ideas
+  in detail and it's one of those disciplines which actively makes us
+  question our intuition (by proving it to be so wrong, so often,
+  almost daily...)
+
+  A sobering/humbling experience with many benefits...
+#+END_EXAMPLE
+
+* Alan Kay
+
+  :PROPERTIES:
+  :reveal_background: #ffff00
+  :reveal_extra_attr: class="quote"
+  :END:
+
+  "The protean nature of the computer is such that
+
+  it can act like a machine or like a language
+
+  to be shaped and exploited."
+
+#+BEGIN_EXAMPLE
+  Computers are an ideal environment to experiment and explore
+  new languages and find & define our own languages of expression...
+#+END_EXAMPLE
+
+* Cambrian explosion
+
+  :PROPERTIES:
+  :reveal_extra_attr: class="full-size"
+  :END:
+
+  [[./assets/cambrian-explosion.jpg]]
+
+#+BEGIN_EXAMPLE
+  Just like with the short period (in the bigger picture) of the Cambrian,
+  which gave rise to the majority of species which have survived until our age,
+  especially recently we have seen an emergence of new languages addressing
+  the shortcomings of the ones we used to take for granted, but have
+  increasingly been hitting their limits.
+
+  This of course is yet another sign of the Tower of Babel effect, but IMHO
+  a very good one. Apart from increased fragmentation, more languages mean 
+  more forms of expression (some potentially more effective forms too) and
+  altogether increased potential to discover and attract new ways of thinking.
+
+  Fragmentation is only an issue if people are unwilling to learn new languages.
+  Yes, learning takes time and effort, but therefore it is paramount for
+  our education system to teach how to learn in the first place instead of
+  teaching how to learn facts!
+#+END_EXAMPLE
+
+* Domain specific languages
+
+#+BEGIN_EXAMPLE
+  Unlike many general purpose programming languages, many of these new
+  languages are more focused on certain topics only and so provide a vocabulary
+  and set of idioms much better suited to more concisely express and play with
+  the metaphors of those domains/niches than any general purpose language ever could.
+
+  Looking back over my own output I also realized that this is exactly what I
+  unconsciously started doing for almost every project I worked on over the past
+  10 years: Create mini languages to better formulate solutions and therefore
+  be able to better deal with the specific concepts of each project.
+#+END_EXAMPLE
+
+* Hosted languages
+#+BEGIN_EXAMPLE
+  Often DSLs are also designed as hosted languages, borrowing some syntax, grammar
+  or infrastructure from existing language technologies. This is very efficient
+  and in many cases completely sufficient and saves 80% of the effort to define
+  a new language (tooling).
+#+END_EXAMPLE
+* Language as/is layer cake
+* Language as/is technology
+* New metaphors
+* DSL example: Sonic-PI
+
+  [[http://sonic-pi.net][sonic-pi.net]]
+
+  Language for music & audio education
+  
+  [[https://twitter.com/samaaron][Sam Aaron]]
+  
+  Rasperry Pi, Broadcom & Cambridge University
+  
+  Ruby / SuperCollider
+  
+  Currently on RPi / OSX
+
+#+BEGIN_EXAMPLE
+  Sam has been an inspiration to my own work ever since I found out about
+  Overtone, a Clojure based DSL for livecoding music and sitting atop of
+  SuperCollider (which I always found fairly unapproachable).
+
+  Whereas Overtone is making use of the flexibility of Clojure and relies on
+  certain external tooling to use efficiently (i.e. Emacs or other editors with
+  REPL support), Sonic-PI is a standalone enviroment to teach music & audio
+  livecoding using Raspberry-PI or OSX (for now).
+
+  Let's jam...
+#+END_EXAMPLE
+
+* Sonic-PI livecoding
+
+#+REVEAL_HTML: <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/169948688&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+
+  [[https://gist.github.com/postspectacular/d9c951efb166a2e82f53][Source code]]
+
+* Confirmation bias
+
+  :PROPERTIES:
+  :reveal_background: ./assets/gifs/jack-small.gif
+  :reveal_extra_attr: class="white-text"
+  :END:
+
+  "You steer where you look"
+
+#+BEGIN_EXAMPLE
+  As creators we must be aware of this effect and no one is truly free of it.
+
+  The criticisms so far have also nothing to do with critical design thinking,
+  which I think is slowly becoming a brand itself and is a quite self-preserving
+  discipline, which certain parts of academia and the art world thrive upon.
+
+  What I'd like you to take away from this all, is that we should be more
+  consciously aware that there're always options and if we don't have the right
+  way/tools to formulate an idea it might just be because we have limited our
+  intellectual toolkit and the implied conceptual constraints and we need to
+  start looking at other fields or even other periods in time and take their
+  languages as inspiration.
+#+END_EXAMPLE
+
+* Vocabulary vs. idioms
+
+  Algorithms are the idioms of programming
+
+  (not of programming languages, but programming as language itself)
+
+#+BEGIN_EXAMPLE
+  Every language has different levels of expressiveness, some better suited
+  to express certain ideas than others. This is not just due to varied
+  sizes of their vocabulary, but even more so their idioms, their patterns
+  of thought & expression - their metaphors.
+#+END_EXAMPLE
+
+* Metaphors
+
+  Most algorithms rely on metaphors and break when metaphor changes
+
+#+BEGIN_EXAMPLE
+  The ongoing transformation from the static model of working with randomly
+  accessible datasets in memory to more stream-based & distributed ways of
+  computation is a typical example and requires a whole new set of metaphors
+  and words to deal with efficiently...
+#+END_EXAMPLE
+
+* Out of order (execution)
+
+#+BEGIN_EXAMPLE
+  Async has become one of the tech buzzwords of the past few years, brought
+  about by changes in the underlying hardware, which now cause our software
+  patterns to catch up. Yet some of the most popular languages still don't
+  have a consistent and/or well thought out vocabulary to deal with these
+  ideas...
+#+END_EXAMPLE
+
+* Async all the things
+
+  :PROPERTIES:
+  :reveal_extra_attr: class="full-size"
+  :END:
+
+  [[./assets/async-all.png]]
+
+  [[https://twitter.com/sjb3d/status/406077892364214273][Permalink]]
+
+#+BEGIN_EXAMPLE
+  Btw. one of my alltime favourite tweets... Even though async is a hot topic
+  right now and the JS world seems content with its current approaches, there
+  have been alternative, more powerful & elegant solutions around since the
+  late 70s and some recent languages (like Erlang, Go, Clojure) have some of
+  their vocabulary and semantics based on them...
+
+  And his is leading back to my earlier point: Certain languages attract certain
+  communities and ways of thinking. It is our own responsibility to learn from
+  these different cultures & perspectives and we should help impart them (even
+  if it's in the form of questioning) in our own phyles wherever we can, instead
+  of supporting the established status-quo...
+#+END_EXAMPLE
+
+* Concurrency
+
+  :PROPERTIES:
+  :reveal_background: ./assets/gifs/concurrency.gif
+  :reveal_extra_attr: class="quote"
+  :END:
+
+#+BEGIN_EXAMPLE
+  This is how your node.js application looks like inside... :)
+#+END_EXAMPLE
+
+* Distribute all the things
+
+  [[./assets/people/leslie-lamport.jpg]]
+
+  "A distributed system is one
+  where a machine I’ve never heard of
+  can cause my program to fail."
+
+  Leslie Lamport
+
+#+BEGIN_EXAMPLE
+  The web is now over 25 years old. The internet almost double that. Yet
+  most of our software infrastructure is still built on single end-to-end
+  communications (even if they're in the cloud now) and until recently most
+  of us have somehow lost focus on truly utilizing the topology of the underlying
+  fabric. This has made the majority of the network dependent on a small
+  number of super-nodes and has shifted development focus of new machines
+  (i.e. phones/tablets) to become increasingly dependent on these centralized
+  structures.
+
+  A more distributed form of computing can lead us to huge resource savings,
+  better media distribution/percolation and above all more independence.
+#+END_EXAMPLE
+
+* Client vs. Server
+* APIs vs. dataflow
+* Network topologies
+
+  :PROPERTIES:
+  :reveal_extra_attr: class="full-size"
+  :END:
+
+  [[./assets/network-topologies.svg]]
+
+* Exponential behavior
+  :PROPERTIES:
+  :reveal_extra_attr: class="full-size"
+  :END:
+
+  [[./assets/exponential.png]]
+
+* Moore's law vs Big-O
+
+  :PROPERTIES:
+  :reveal_extra_attr: class="full-size"
+  :END:
+
+  [[./assets/moores-law.jpg]]
+
+* 
+
+  :PROPERTIES:
+  :reveal_extra_attr: class="full-size"
+  :END:
+
+  [[./assets/big-o.png]]
+
+Big-O notation
+
+* 
+
+  :PROPERTIES:
+  :reveal_extra_attr: class="full-size"
+  :END:
+
+  [[./assets/big-o-harmful.png]]
+
+  New computers 10x as fast, 10x memory
+
+  Problems may be 10x bigger
+
+  With quadratic algorithms, still takes *10x* (or even *100x*...) as long
+
+#+BEGIN_EXAMPLE
+  This problem cannot be solved with bigger data centers alone.
+  Need more mindshare in CS/Maths, science in general...
+
+  Many fundamental algorithms used in Bio-tech and other Big-data
+  areas have been developed in 60s/70s... 
+#+END_EXAMPLE
+
+* We don't know how to program
+
+#+BEGIN_EXAMPLE
+  Not the only one who thinks this. It's actually also the title of a
+  Gerald Sussman talk @ Strangeloop from a couple of years ago...
+  Sussman has been teaching CS @ MIT since the 70s and the SICP book
+  which he co-authored counts as one of the defacto textbooks
+  in certain areas/schools...
+#+END_EXAMPLE
+
+* unlearn to learn(!)
+* Imperative, functional, declarative
+
+   "There're no If-statements in nature"
+
+#+BEGIN_EXAMPLE
+  In most popular programming languages we talk to machines like a boss:
+
+  "Do this, then that, now wait for your friend to finish something, then
+  if I ask you a question you'll answer yes or no and if you get it wrong,
+  you must leave. Also, don't touch this value here, this belongs to
+  someone else..."
+
+  Ridiculous, isn't it? Having to think in a language like on a daily
+  basis can cause depression...
+
+  Functional and (especially declarative) languages not only avoid this
+  madness, but also allow us to work much more conceptual on the problems
+  at hand. This is because they're much more focused on designing the flow
+  of data transformations through the system. With declarative langs we don't
+  even deal with *how* the data is transformed, we only state inputs and
+  desired outputs. SQL is maybe the most well-known example of such a language.
+  I believe, especially the field of "creative" computing could benefit
+  dramatically from more research in this area...
+#+END_EXAMPLE
+
+* Programmable hardware
+
+   Field-programmable Gate Arrays
+
+   SOC
+
+   Verilog
+
+   VHDL
+
+   PSHDL
+
+#+BEGIN_EXAMPLE
+  Electronics as language
+
+  Declarative languages to define electronics & logic circuits...
+
+  Build your own chip, define & experiment with new hardware architectures
+
+  Downloadable descriptions of electronic components (CPUs, IO etc..)
+#+END_EXAMPLE
+
+* Programmable matter
+
+   Bioinformatics
+
+   Digital Fabrication
+
+   Nano-structures & material behaviors
+
+   MIT Self-assembly Lab
+
+* Programmable programming languages
+
+  Meta programming
+
+  Homoiconicity
+
+  Code is data & data is code
+
+#+BEGIN_EXAMPLE
+  Languages in this category exist since the 1950s. Lisps are one example.
+  Clojure, my favorite language for the past 3 years belongs in this
+  family too. Even though I often might be seen a little bit of
+  a loonie, constantly arguing that my peers should at least learn
+  about it, I only started seriously thinking about all these
+  issues I've talked about so far *only due to my use of this language*
+  and the amazing community around it.
+#+END_EXAMPLE
+
+* Morphogen
+
+  [[http://thi.ng/morphogen][thi.ng/morphogen]]
+
+  ↓
+
+#+BEGIN_EXAMPLE
+  This project is based on a purely functional view of the world.
+  Through my 15 years of working with generative design I've seen first
+  hand how all objects are just results of processes. They're both inputs
+  and outputs. But objects are nouns and processes matter more. They're the
+  verbs, and encode the rules of transformation which form new nouns.
+
+  Morphogen is an embedded DSL (for Clojure/ClojureScript) to define 3D
+  structures as a sequence of tree based transformations, starting from a
+  single seed form. For a long time, I've been inspired by early embryonic
+  growth processes and the role of DNA as extremely limited language to
+  define cell divisions, arrangement, specialization and growth (amongst a
+  myriad of other things in living matter).
+
+  So far the morphogen language itself only has a minimal vocabulary, but
+  can be easily extended. I've been trying to attempt a similar thing whilst
+  still working with Java in the past, but since in Clojure the whole idea
+  can be expressed 10x more concisely and elegant.
+
+  It's also important to point out that the language does not care at all 
+  about or operate directly on 3D geometry. It's sole purpose is to make it
+  easy to encode complex trees/hierarchies of transformations, each producing
+  one or more child cells. The final computed hierarchy then constitutes a
+  complete DNA sequence which then can be applied fully or partially to a
+  concrete seed form (e.g. a cube) to transform it into a new form, potentially
+  consisting of millions of smaller shapes...
+
+  However, working in a language where code is data (and vice versa) and
+  having a new program as the main output of a morphogen program, also means
+  we can apply other processes to just this generated piece of code. E.g. we
+  could use a genetic algorithm to breed new object DNA sequences from a
+  set of initial parents. These designs could be evaluated and optimized to
+  customizable conditions (e.g. structural lightness or integrity, or optimal
+  use of a bounding volume). This could lead to an entire new approach for
+  designing objects and would be freed from the constraints of a traditional
+  3d modeling approach...
+#+END_EXAMPLE
+
+** Kingdom of Verbs
+
+  :PROPERTIES:
+  :reveal_extra_attr: class="full-size"
+  :END:
+
+  [[./assets/morphogen/icons.png]]
+
+  split - inset - mirror - scale - stretch - tilt - shift - empty
+
+  --
+
+  RISC style assembly lang for generating geometry
+
+#+BEGIN_EXAMPLE
+  After hundreds of hours of sketching and experimenting I narrowed the
+  vocabulary down just these 8 operations, which can produce a surprisingly
+  large amount of outcomes. The "empty" op is actually the most important
+  of all, since it allows us to create negative space an so lead to more
+  complex forms...
+
+  
+  By now I think of it as a RISC style assembly language for 3D forms...
+#+END_EXAMPLE
+
+** 
+  :PROPERTIES:
+  :reveal_background: ./assets/morphogen/morphogen-ex03-flat.jpg
+  :END:
+
+#+BEGIN_EXAMPLE
+  This hexagonal structure started from a single edge and the entire DNA
+  sequence only consists of mirror/reflect operations. Due to the internal
+  corner angles of the seed shape, these reflections automatically form
+  hexagons...
+#+END_EXAMPLE
+
+** 
+  :PROPERTIES:
+  :reveal_background: ./assets/morphogen/20140323-morphogen-ex03-6225spp-agfa-optima200.png
+  :reveal_extra_attr: class="white-text"
+  :END:
+
+  [[https://github.com/thi-ng/morphogen/blob/develop/src/examples.org][Source on GitHub]]
+
+#+BEGIN_EXAMPLE
+  Since morphogen is both a code generator and interpreter, we can apply the
+  same code to a slightly different seed form: In this case a cuboid cut out
+  from a sphere. Because of the change, the code creates a slightly folded,
+  hemispherical structure...
+#+END_EXAMPLE
+
+** 
+  :PROPERTIES:
+  :reveal_background: ./assets/morphogen/morphogen-grid.gif
+  :END:
+
+** 
+
+#+BEGIN_SRC clojure
+  (defn punch
+    [dir w & [out]]
+    (subdiv-inset :dir dir :inset w :out (or out {4 nil})))
+
+  (def tree
+    (let [inner (->> [(punch :y 0.00625) (punch :y 0.00625)
+                      (punch :x 0.00625) (punch :x 0.00625)]
+                     (punch :z 0.00625)
+                     (repeat 4)
+                     (punch :z 0.04)
+                     (repeat 5)
+                     (subdiv :slices 5 :out)
+                     (repeat 9)
+                     (subdiv :cols 3 :rows 3 :out)
+                     (repeat 2))
+          wall   (fn [edge dir]
+                   (scale-edge
+                    edge dir :len 0.6666
+                    :out [(split-displace dir :z :offset -0.25 :out (vec inner))]))]
+      (scale-side
+       :b 0.5
+       :out (subdiv-inset
+             :dir :z :inset 0.35
+             :out (mapv #(apply wall %) [[:ef :x] [:ab :x] [:cd :y] [:ab :y]])))))
+
+  (save-mesh (seed-box (aabb 2 2 1.25)) tree)
+#+END_SRC
+
+** Language = compression
+
+   :PROPERTIES:
+   :reveal_extra_attr: class="full-size"
+   :END:
+
+  [[./assets/morphogen/morphogen-grid-graph.png]]
+
+  24 lines of code
+
+  uses only 4 verbs
+
+  produces operator tree 10 levels deep
+
+  produces 29250 operations
+
+  transforms a cube into mesh of 110208 triangles
+
+** 
+  :PROPERTIES:
+  :reveal_background: ./assets/morphogen/morphogen-mask.gif
+  :END:
+
+** 
+   :PROPERTIES:
+   :reveal_extra_attr: class="full-size"
+   :END:
+
+  [[./assets/morphogen/morphogen-mask-graph.png]]
+
+** 
+  :PROPERTIES:
+  :reveal_background: ./assets/morphogen/morphogen-flower.gif
+  :END:
+
+** 
+   :PROPERTIES:
+   :reveal_extra_attr: class="full-size"
+   :END:
+
+  [[./assets/morphogen/morphogen-flower-graph.png]]
+
+** 
+  :PROPERTIES:
+  :reveal_background: ./assets/morphogen/morphogen-virus.gif
+  :END:
+
+* DevArt Co(de)Factory
+
+  :PROPERTIES:
+  :reveal_background: ./assets/codefactory/codefactory.jpg
+  :reveal_extra_attr: class="white-text"
+  :END:
+
+  [[http://devartcodefactory.com][devartcodefactory.com]]
+
+  [[https://devart.withgoogle.com][devart.withgoogle.com]]
+
+* DevArt Co(de)Factory
+
+  [[https://github.com/postspectacular/devart-codefactory][github.com/postspectacular/devart-codefactory]]
+
+  Open source (incl. all assets)
+
+  Apache & Creative Commons licensed
+
+  7 months of (more than) full-time development
+
+  Google AppEngine, ClojureScript UI
+
+  6500 LOC
+
+  additional 10,000 LOC in libraries
+
+  Clojure(Script), Python, Bash
+
+* DevArt Co(de)Factory
+
+  [[./assets/graphs/thing-libs.png]]
+
+  1st major/public/combined use case of [[http://thi.ng][thi.ng]] libraries
+
+  Project indirectly funded development of at least three libs
+
+  ↓
+
+** Installation design
+
+   :PROPERTIES:
+   :reveal_background: ./assets/codefactory/20140328-mockup-birdseye.jpg
+   :reveal_extra_attr: class="white-text"
+   :END:
+
+  ↓
+
+#+BEGIN_EXAMPLE
+  Installation space completely planned in code and generated
+  render scenes for pre-viz purposes... It also generated the
+  guide meshes for the main structure & plinths, which have then
+  been further processed to compute the 446 individual panel designs
+  used for 3D printing...
+#+END_EXAMPLE
+
+** Installation design
+
+   :PROPERTIES:
+   :reveal_background: ./assets/codefactory/20140328-mockup-userview.jpg
+   :reveal_extra_attr: class="white-text"
+   :END:
+
+  ↓
+
+#+BEGIN_EXAMPLE
+  Having the plans in code form allowed for quick changes to various
+  elements, e.g. the tablets & plinths orientation/sizes...
+#+END_EXAMPLE
+
+** Digital fabrication
+
+   :PROPERTIES:
+   :reveal_background: ./assets/codefactory/20140417-panel0-7-255spp.jpg
+   :END:
+
+#+BEGIN_EXAMPLE
+  Some pre-viz renders of tiles for the 3m tall main structure. These
+  tiles are too designed only with the morphogen language and there are
+  13 unique panels along the vertical axis...
+#+END_EXAMPLE
+
+** Digital fabrication
+
+  :PROPERTIES:
+  :reveal_background: ./assets/codefactory/20140417-panel14.jpg
+  :END:
+
+#+BEGIN_EXAMPLE
+  A closeup of a tile from the top row. The additional details (pedals)
+  are introduced gradually with increased elevation.
+
+  I took a cue from 1920's American Art Deco, the golden age of factories
+  as the main design aesthetic for the physical parts of this piece...
+#+END_EXAMPLE
+
+** Digital fabrication
+
+  :PROPERTIES:
+  :reveal_background: ./assets/codefactory/20140415-panels-1290spp.jpg
+  :END:
+
+#+BEGIN_EXAMPLE
+  Render of a 90 degree section of the final structure...
+#+END_EXAMPLE
+
+** Co(de)Factory UI
+
+  :PROPERTIES:
+  :reveal_background: ./assets/codefactory/codefactory-ui.png
+  :reveal_extra_attr: class="white-text"
+  :END:
+
+#+BEGIN_EXAMPLE
+  The web UI used to visually program 3D objects. Runs on Nexus 10 tablets
+  in the gallery...
+#+END_EXAMPLE
+
+** Co(de)Factory UI
+
+  :PROPERTIES:
+  :reveal_background: ./assets/codefactory/codefactory-ui-sel.png
+  :reveal_extra_attr: class="white-text"
+  :END:
+
+#+BEGIN_EXAMPLE
+  When an operation is selected in the code tree, it's highlighted in the
+  3d preview. Some operations also have adjustable parameters (using the slider)
+#+END_EXAMPLE
+
+** Co-authorship visualization
+
+  :PROPERTIES:
+  :reveal_background: #333336
+  :reveal_extra_attr: class="full-size white-text"
+  :END:
+
+  [[./assets/codefactory/codefactory-branching.png]]
+
+#+BEGIN_EXAMPLE
+  The "Co" in Co(de)Factory - co-design. Standing on the shoulders of giants.
+
+  Any object in the website gallery can be further edited, but will be
+  automatically linked to its parent, thus creating a Git-like tree and
+  of ideas and their respective authors...
+#+END_EXAMPLE
+
+** Co(de)Factory
+
+   :PROPERTIES:
+   :reveal_background: ./assets/codefactory/objects-e8ac5e06-3b5f-41e7-84b6-dd785f446b6c-1280.jpg
+   :reveal_extra_attr: class="white-text"
+   :END:
+
+   [[http://devartcodefactory.com/#/gallery/e8ac5e06-3b5f-41e7-84b6-dd785f446b6c][view in gallery]]
+
+** Co(de)Factory
+
+   :PROPERTIES:
+   :reveal_background: ./assets/codefactory/objects-40f7b9f7-75ac-4fdc-95c0-b617b063ed21-1280.jpg
+   :reveal_extra_attr: class="white-text"
+   :END:
+
+   [[http://devartcodefactory.com/#/gallery/40f7b9f7-75ac-4fdc-95c0-b617b063ed21][view in gallery]]
+
+** Co(de)Factory
+
+   :PROPERTIES:
+   :reveal_background: ./assets/codefactory/objects-caf9c405-6960-41b2-b83c-a04ef7057bf6-1280.jpg
+   :reveal_extra_attr: class="white-text"
+   :END:
+
+   [[http://devartcodefactory.com/#/gallery/caf9c405-6960-41b2-b83c-a04ef7057bf6][view in gallery]]
+
+** Co(de)Factory
+
+   :PROPERTIES:
+   :reveal_background: ./assets/codefactory/objects-47b3e3f3-ed49-4608-bc5e-da6550bfd9ae-1280.jpg
+   :reveal_extra_attr: class="white-text"
+   :END:
+
+   [[http://devartcodefactory.com/#/gallery/47b3e3f3-ed49-4608-bc5e-da6550bfd9ae][view in gallery]]
+
+** Co(de)Factory
+
+   :PROPERTIES:
+   :reveal_background: ./assets/codefactory/objects-788ecd4a-712c-4eee-9014-b1ed99ad6708-1280.jpg
+   :reveal_extra_attr: class="white-text"
+   :END:
+
+   [[http://devartcodefactory.com/#/gallery/788ecd4a-712c-4eee-9014-b1ed99ad6708][view in gallery]]
+
+** Co(de)Factory
+
+   :PROPERTIES:
+   :reveal_background: ./assets/codefactory/objects-e01d5ce1-6c97-4289-8fca-7f8b58ff3400-1280.jpg
+   :reveal_extra_attr: class="white-text"
+   :END:
+
+   [[http://devartcodefactory.com/#/gallery/e01d5ce1-6c97-4289-8fca-7f8b58ff3400][view in gallery]]
+
+** Co(de)Factory
+
+   :PROPERTIES:
+   :reveal_background: ./assets/codefactory/objects-1193a45a-f22b-4657-b017-49282171f855-1280.jpg
+   :reveal_extra_attr: class="white-text"
+   :END:
+
+   [[http://devartcodefactory.com/#/gallery/1193a45a-f22b-4657-b017-49282171f855][view in gallery]]
+
+** Young Creators
+
+   :PROPERTIES:
+   :reveal_extra_attr: class="full-size"
+   :END:
+
+   [[./assets/codefactory/minecraft/out.gif]]
+
+#+BEGIN_EXAMPLE
+  As part of the Google DevArt initiative, we used CodeFactory to
+  teach a series of workshops to primary school kids, whose task was
+  to create a Minecraft style character using the visual programming UI.
+
+  As part of this we addressed not only the process oriented way
+  of designing an object, but also spatial thinking in 3D and made them
+  think about their own bodies in a playful way.
+#+END_EXAMPLE
+
+* Language vs. Knowledge
+* Alan Kay
+
+  :PROPERTIES:
+  :reveal_background: #ffff00
+  :reveal_extra_attr: class="quote"
+  :END:
+
+  "There is the desire of a consumer society to have no learning curves.
+
+  This tends to result in very dumbed-down products
+
+  that are easy to get started on,
+
+  but are generally worthless and/or debilitating."
+
+* Magic
+
+  :PROPERTIES:
+  :reveal_background: ./assets/gifs/magic-shia.gif
+  :reveal_extra_attr: class="white-text"
+  :END:
+
+#+BEGIN_EXAMPLE
+  As I said earlier, for me the only magic there is, is that of discovery.
+
+  Anything is magic if we don't understand it. It's the role of
+  education to show and help us and future generations, that
+  there's no such thing as magic. We keep on justifying shallow
+  learning curves in order to produce quick throw-away results
+  faster, increase market & mind shares, but we leave people in
+  the cold to teach them the underlying intellectual tools & knowledge..
+
+  This *does* take far more effort (see AK's hierarchy earlier),
+  but eventually allows one to synthesize and grow far more
+  efficiently. This problem is omnipresent and even as non-coders
+  we need to be aware of the implications, especially UI/UX designers
+  carry a huge responsibility here, since it's their work which
+  defines how an underlying system can be approached, manipulated
+  and how it interfaces with the environment.
+
+  If we truly want to empower people with new technologies, we must
+  stop designing technologies with a mass-market focus on lowest
+  common denominators. We must stop equaling simple with easy.
+
+  Also see Rich Hickey's talk "Simple made easy"...
+#+END_EXAMPLE
+
+* Language vs. Knowledge
+
+#+REVEAL_HTML: <svg width="600" height="200">
+#+REVEAL_HTML: <path d="M0,100 L600,100 M30,70 L0,100 L30,130 M570,70 L600,100 L570,130" stroke="black" stroke-width="2" fill="none"/>
+#+REVEAL_HTML: <text x="0" y="40" font-size="36">MICRO</text>
+#+REVEAL_HTML: <text x="0" y="190" font-size="36">LINEAR</text>
+#+REVEAL_HTML: <text x="600" y="40" font-size="36" text-anchor="end">MACRO</text>
+#+REVEAL_HTML: <text x="600" y="190" font-size="36" text-anchor="end">NON-LINEAR</text>
+#+REVEAL_HTML: </svg>
+
+#+BEGIN_EXAMPLE
+  This dichotomy largely exists because of the ordering enforced by
+  syntax & grammar. As I'm learning more in my life, this dichotomy
+  is something I'm increasingly struggling with. Hence, please bear
+  with me as I try to wrangle all of these ideas and end up doing so
+  not in the most linear way...
+#+END_EXAMPLE
+
+* Data (alone) is not knowledge
+
+#+BEGIN_EXAMPLE
+  Especially not if in proprietary silos and stored in "dumb" formats...
+#+END_EXAMPLE
+
+* Hypertext for data
+
+  JSON / CSV / XML
+
+  vs.
+
+  JSON-LD / CSV-LD / RDF / Transit [...]
+
+#+BEGIN_EXAMPLE
+  Data not always tabular or hierarchical (trees).
+  JSON, CSV are good examples of shallow learning curves, quick results
+  but not very adequate when it comes to encoding complex data. We need to
+  invest more effort in capturing data semantics. We need to work with
+  formats, which allow cross-referencing (hypertext for data) and support
+  machine-readable semantics.
+#+END_EXAMPLE
+
+* (Lack of) Data representations
+
+  - ✓ lists
+  - ✓ maps
+  - ✗ sets
+  - ✗ matrices
+  - ✗ trees
+  - ✗ graphs
+
+#+BEGIN_EXAMPLE
+  Many popular languages (e.g. JS) still don't have native support
+  for such fundamental types or mechanisms which allow for more
+  intelligent dealings with data and have caused endless fragmentation
+  and re-invention resulting in interoperability issues and dependencies...
+
+  Designing a language is hard and must be done with an open mind for
+  potential future uses...
+#+END_EXAMPLE
+
+* Magic number 3
+
+  ↓
+
+** 
+  :PROPERTIES:
+  :reveal_background: ./assets/voxel-posse.jpg
+  :END:
+
+#+BEGIN_EXAMPLE
+  In geometry, the triangle is the shape which can be used to represent
+  any other more complex form. Traditionally, it's also the lowest common
+  denominator of computer graphics and is mathematically one of the most
+  researched and understood geometric entities...
+#+END_EXAMPLE
+
+** subject → predicate → object
+
+#+BEGIN_EXAMPLE
+  An SPO-coupling (tuple) is the triangle's equivalent of capturing
+  facts. Given there are many facts in the world and give each S,P and O
+  unique identifiers, we can start connecting them into a graph...
+#+END_EXAMPLE
+
+* Graphs
+
+  ↓
+
+** Retune
+#+REVEAL_TRANS: none
+*** 
+   :PROPERTIES:
+   :reveal_extra_attr: class="full-size"
+   :END:
+
+   [[./assets/graphs/retune/retune-00.png]]
+
+*** 
+   :PROPERTIES:
+   :reveal_extra_attr: class="full-size"
+   :END:
+
+   [[./assets/graphs/retune/retune-01.png]]
+
+*** 
+   :PROPERTIES:
+   :reveal_extra_attr: class="full-size"
+   :END:
+
+   [[./assets/graphs/retune/retune-02.png]]
+
+*** 
+   :PROPERTIES:
+   :reveal_extra_attr: class="full-size"
+   :END:
+
+   [[./assets/graphs/retune/retune-03.png]]
+
+*** 
+   :PROPERTIES:
+   :reveal_extra_attr: class="full-size"
+   :END:
+
+   [[./assets/graphs/retune/retune-04.png]]
+
+*** 
+   :PROPERTIES:
+   :reveal_extra_attr: class="full-size"
+   :END:
+
+   [[./assets/graphs/retune/retune-05.png]]
+
+*** 
+   :PROPERTIES:
+   :reveal_extra_attr: class="full-size"
+   :END:
+
+   [[./assets/graphs/retune/retune-06.png]]
+
+*** 
+   :PROPERTIES:
+   :reveal_extra_attr: class="full-size"
+   :END:
+
+   [[./assets/graphs/retune/retune-07.png]]
+
+*** 
+   :PROPERTIES:
+   :reveal_extra_attr: class="full-size"
+   :END:
+
+   [[./assets/graphs/retune/retune-08.png]]
+
+*** 
+   :PROPERTIES:
+   :reveal_extra_attr: class="full-size"
+   :END:
+
+   [[./assets/graphs/retune/retune-09.png]]
+
+*** 
+   :PROPERTIES:
+   :reveal_extra_attr: class="full-size"
+   :END:
+
+   [[./assets/graphs/retune/retune-10.png]]
+
+*** 
+   :PROPERTIES:
+   :reveal_extra_attr: class="full-size"
+   :END:
+
+   [[./assets/graphs/retune/retune-11.png]]
+
+*** 
+   :PROPERTIES:
+   :reveal_extra_attr: class="full-size"
+   :END:
+
+   [[./assets/graphs/retune/retune-12.png]]
+
+*** 
+   :PROPERTIES:
+   :reveal_extra_attr: class="full-size"
+   :END:
+
+   [[./assets/graphs/retune/retune-13.png]]
+
+*** 
+   :PROPERTIES:
+   :reveal_extra_attr: class="full-size"
+   :END:
+
+   [[./assets/graphs/retune/retune-14.png]]
+
+*** 
+   :PROPERTIES:
+   :reveal_extra_attr: class="full-size"
+   :END:
+
+   [[./assets/graphs/retune/retune-15.png]]
+
+*** 
+   :PROPERTIES:
+   :reveal_extra_attr: class="full-size"
+   :END:
+
+   [[./assets/graphs/retune/retune-16.png]]
+
+*** 
+   :PROPERTIES:
+   :reveal_extra_attr: class="full-size"
+   :END:
+
+   [[./assets/graphs/retune/retune-17.png]]
+
+*** 
+   :PROPERTIES:
+   :reveal_extra_attr: class="full-size"
+   :END:
+
+   [[./assets/graphs/retune/retune-18.png]]
+
+*** 
+   :PROPERTIES:
+   :reveal_extra_attr: class="full-size"
+   :END:
+
+   [[./assets/graphs/retune/retune-19.png]]
+
+*** 
+   :PROPERTIES:
+   :reveal_extra_attr: class="full-size"
+   :END:
+
+   [[./assets/graphs/retune/retune-20.png]]
+
+*** 
+   :PROPERTIES:
+   :reveal_extra_attr: class="full-size"
+   :END:
+
+   [[./assets/graphs/retune/retune-21.png]]
+
+*** 
+   :PROPERTIES:
+   :reveal_extra_attr: class="full-size"
+   :END:
+
+   [[./assets/graphs/retune/retune-22.png]]
+
+*** 
+   :PROPERTIES:
+   :reveal_extra_attr: class="full-size"
+   :END:
+
+   [[./assets/graphs/retune/retune-23.png]]
+
+*** 
+   :PROPERTIES:
+   :reveal_extra_attr: class="full-size"
+   :END:
+
+   [[./assets/graphs/retune/retune-24.png]]
+
+*** 
+   :PROPERTIES:
+   :reveal_extra_attr: class="full-size"
+   :END:
+
+   [[./assets/graphs/retune/retune-25.png]]
+
+*** 
+   :PROPERTIES:
+   :reveal_extra_attr: class="full-size"
+   :END:
+
+   [[./assets/graphs/retune/retune-26.png]]
+
+*** 
+   :PROPERTIES:
+   :reveal_extra_attr: class="full-size"
+   :END:
+
+   [[./assets/graphs/retune/retune-27.png]]
+
+*** 
+   :PROPERTIES:
+   :reveal_extra_attr: class="full-size"
+   :END:
+
+   [[./assets/graphs/retune/retune-28.png]]
+
+*** 
+   :PROPERTIES:
+   :reveal_extra_attr: class="full-size"
+   :END:
+
+   [[./assets/graphs/retune/retune-29.png]]
+
+*** 
+   :PROPERTIES:
+   :reveal_extra_attr: class="full-size"
+   :END:
+
+   [[./assets/graphs/retune/retune-30.png]]
+
+*** 
+   :PROPERTIES:
+   :reveal_extra_attr: class="full-size"
+   :END:
+
+   [[./assets/graphs/retune/retune-31.png]]
+
+*** 
+   :PROPERTIES:
+   :reveal_extra_attr: class="full-size"
+   :END:
+
+   [[./assets/graphs/retune/retune-32.png]]
+
+*** 
+   :PROPERTIES:
+   :reveal_extra_attr: class="full-size"
+   :END:
+
+   [[./assets/graphs/retune/retune-33.png]]
+
+*** 
+   :PROPERTIES:
+   :reveal_extra_attr: class="full-size"
+   :END:
+
+   [[./assets/graphs/retune/retune-34.png]]
+* Inferred knowledge
+
+  :PROPERTIES:
+  :reveal_extra_attr: class="full-size"
+  :END:
+
+  [[./assets/graphs/query-example01.png]]
+
+#+BEGIN_EXAMPLE
+  Graphs can be queried like databases (only more flexible).
+  Here's an example graph of parent-child relationships. It's
+  missing out some crucial pieces of information, but we
+  can infer these using pattern matching and constructing new
+  facts based on what's already known. The example is highly
+  contrived, but that's not the point here...
+#+END_EXAMPLE
+
+* Inferred knowledge
+
+  :PROPERTIES:
+  :reveal_extra_attr: class="full-size"
+  :END:
+
+  [[./assets/graphs/query-example02.png]]
+
+#+BEGIN_EXAMPLE
+  The triples in red are the inferred factoids we figured out.
+  Now look at the balance between known (black) and inferred
+  statements (red) and recall the collection of phone & online
+  records. Maybe you can start understanding why we should
+  very much care about who is getting access to such records and
+  also ask what other reasons apart from terrorist threats might
+  have triggered such a frantic collection in the first place.
+  Graphs can be combined and inference can be used recursively
+  and in practice usually goes way beyond this simple illustration
+  here...
+#+END_EXAMPLE
+
+* Graph all the things (music)
+
+  :PROPERTIES:
+  :reveal_extra_attr: class="full-size"
+  :END:
+
+ [[./assets/graphs/chord-progression.png]]
+
+#+BEGIN_EXAMPLE
+  It's not all doom & gloom. Graphs can also be used to drive
+  more creative endeavours. E.g. In 2008 I worked on an installation
+  project at the V&A w/ Universal Everything and I had to create
+  an algorithmic composition tool. I used graphs like this to define
+  chord progressions and allow the overall flow of the music to be
+  partially defined via top level tags (e.g. "uplifting")
+#+END_EXAMPLE
+
+* Graph all the things (music)
+
+#+BEGIN_SRC clojure
+  ;; Ok computer, find me the notes and their midi values for the 3rd chord
+  ;; in an uplifting chord progression in C-major...
+
+  (query
+   {:select    '[?note ?midi]
+    :from      chords-graph
+    :values    '{?key Cmaj ?tag uplifting}
+    :query     '[{:where [[?cp tag ?tag]
+                          [?cp chord-progression ?chord1]
+                          [?chord1 next ?chord2]
+                          [?chord2 next ?chord3]
+                          [?chord3 with-key ?key]
+                          [?key note ?note]
+                          [?note midi ?midi]]}]
+    :order-asc '?midi})
+
+  ;; => ({?note C, ?midi 60} {?note E, ?midi 64} {?note A, ?midi 69})
+#+END_SRC
+
+* [[http://thi.ng/trio][thi.ng/trio]]
+
+  :PROPERTIES:
+  :reveal_extra_attr: class="full-size"
+  :END:
+
+  [[./assets/graphs/trio.png]]
+ 
+  Lightweight, datatype agnostic triplestore API
+ 
+  Graph query language with [[http://www.w3.org/TR/sparql11-query][SPARQL]]-like semantics
+ 
+  *No RDF specifics*
+ 
+  (will be addressed by layer on top)
+ 
+  Written in a literate programming style
+
+* Literate programming
+
+  Donald Knuth
+
+  "Prose first, code second."
+
+  [[http://www.jstatsoft.org/v46/i03][Reproducible research]]
+
+  This is how source does & should look like:
+
+  https://github.com/thi-ng/trio/blob/master/src/query.org
+
+  [[http://emacs.org][Emacs]] & [[http://orgmode.org][Org-mode]]
+
+* Graph _all_ the things
+
+  Application state
+
+  Configuration
+
+  User interface rules
+
+  Published data / media / provenance
+
+  Content revisions
+
+  Social media interactions
+
+  IoT
+
+  etc.
+
+  /(graph as model, not as visualization)/
+
+* Linked (Open) Data
+
+  :PROPERTIES:
+  :reveal_extra_attr: class="full-size"
+  :END:
+
+  [[./assets/graphs/lod-cloud.png]]
+
+* Open Data Institute
+
+  [[http://theodi.org][theodi.org]]
+
+** 
+
+  :PROPERTIES:
+  :reveal_background: ./assets/odi/20131011-white-agfa-optima200.jpg
+  :END:
+
+** Issues
+
+  :PROPERTIES:
+  :reveal_background: ./assets/odi/20131011-white-agfa-optima200.jpg
+  :END:
+
+  Council spending data (categorized)
+
+  Demographics
+
+  Environmental
+
+  Ambulance & crime
+
+  GPS shape files
+
+  Disparate data sources / formats
+
+  Varied time spans / resolutions
+
+** Solution
+
+  :PROPERTIES:
+  :reveal_background: ./assets/odi/20131011-white-agfa-optima200.jpg
+  :END:
+
+  All data combined in single graph
+
+  Designed visualization tool to be *non-specific* to city or data
+
+  Create timelapse of chosen data axis
+
+  (Rendered with [[http://luxrender.net][LuxRender]] on AWS EC2 [344 CPUs])
+
+** 4 years of data
+
+  :PROPERTIES:
+  :reveal_background: ./assets/odi/datagrid-knife.jpg
+  :reveal_extra_attr: class="white-text"
+  :END:
+
+  [[https://github.com/learn-postspectacular/resonate-workshop-2014][Resonate 2014 workshop repository]]
+
+#+BEGIN_EXAMPLE
+  Used some of these open datasets also in 3-day Clojure workshop
+  at this year's Resonate festival in Belgrade...
+#+END_EXAMPLE
+
+** 4D London (video)
+
+  :PROPERTIES:
+  :reveal_background: ./assets/odi/frame-0800-693spp.jpg
+  :END:
+  
+* Thanks
+
+  :PROPERTIES:
+  :reveal_background: ./assets/gifs/orson-wells.gif
+  :reveal_extra_attr: class="white-text"
+  :END:
+
+  postspectacular.com
+
+  thi.ng
+
+  k@thi.ng
+
+  @toxi
+
+
